@@ -8,17 +8,42 @@
 </head>
 
 <body>
-  <p>Votre identité</p>
-  <form method="post" action="traitement.php">
-    <p>
-      <label for="nom">1. Nom :</label>
-      <input type="text" name="nom" id="nom" placeholder="Nom" size="10" maxlength="10" />
-    </p>
-    <p>
-      <label for="prenom">2. Prénom :</label>
-      <input type="text" name="prenom" id="prenom" placeholder="Prenom" size="10" maxlength="10" />
-    </p>
+  <fieldset id="formulaire1">
+    <legend>Votre identité</legend>
+
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="nom">1. Nom :</label>
+        <input type="text" name="nom" id="nom" placeholder="Nom" size="15" maxlength="20" />
+      </p>
+      <p>
+        <label for="prenom">2. Prénom :</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Prénom" size="15" maxlength="20"/>
+      </p>
+      <p>
+        <label for="mail">3. Adresse mail :</label>
+        <input type="email" name="mail" id="mail" placeholder="Adresse mail" size="15" maxlength="20" />
+      </p>
+  </fieldset>
+
+  <fieldset id="formulaire2">
+    <legend>Votre adresse de livraison</legend>
+      <p>
+        <label for="adresse">1. Adresse :</label>
+        <textarea name="adresse" id="adresse"></textarea>
+      </p>
+      <p>
+        <label for="codepostal">2. Code postal :</label>
+        <input type="text" name="codepostal" id="codepostal" placeholder="Code postal" size="20" maxlength="5" />
+      </p>
+      <p>
+        <label for="ville">3. Ville :</label>
+        <input type="text" name="ville" id="ville" placeholder="Ville" size="20" maxlength="20" />
+      </p>
+  </fieldset>
   </form>
+
+
 </body>
 
 </html>
