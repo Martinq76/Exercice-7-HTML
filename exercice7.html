@@ -9,40 +9,66 @@
 
 <body>
   <fieldset id="formulaire1">
-    <legend>Votre identité</legend>
+    <legend id="legend1">Votre identité</legend>
 
     <form method="post" action="traitement.php">
       <p>
         <label for="nom">1. Nom :</label>
-        <input type="text" name="nom" id="nom" placeholder="Nom" size="15" maxlength="20" />
+        <input type="text" name="nom" id="nom" placeholder="Nom" size="20" autofocus />
       </p>
       <p>
         <label for="prenom">2. Prénom :</label>
-        <input type="text" name="prenom" id="prenom" placeholder="Prénom" size="15" maxlength="20"/>
+        <input type="text" name="prenom" id="prenom" placeholder="Prénom" size="20" />
       </p>
       <p>
         <label for="mail">3. Adresse mail :</label>
-        <input type="email" name="mail" id="mail" placeholder="Adresse mail" size="15" maxlength="20" />
+        <input type="email" name="mail" id="mail" placeholder="Adresse mail" size="20" />
       </p>
   </fieldset>
 
   <fieldset id="formulaire2">
-    <legend>Votre adresse de livraison</legend>
-      <p>
-        <label for="adresse">1. Adresse :</label>
-        <textarea name="adresse" id="adresse"></textarea>
-      </p>
-      <p>
-        <label for="codepostal">2. Code postal :</label>
-        <input type="text" name="codepostal" id="codepostal" placeholder="Code postal" size="20" maxlength="5" />
-      </p>
-      <p>
-        <label for="ville">3. Ville :</label>
-        <input type="text" name="ville" id="ville" placeholder="Ville" size="20" maxlength="20" />
-      </p>
+    <legend id="legend2">Votre adresse de livraison</legend>
+    <p>
+      <label for="adresse">1. Adresse :</label>
+      <textarea name="adresse" id="adresse"></textarea>
+    </p>
+    <p>
+      <label for="codepostal">2. Code postal :</label>
+      <input type="text" name="codepostal" id="codepostal" placeholder="Code postal" size="20" maxlength="5" />
+    </p>
+    <p>
+      <label for="ville">3. Ville :</label>
+      <input type="text" name="ville" id="ville" placeholder="Ville" size="20" />
+    </p>
   </fieldset>
-  </form>
 
+  <fieldset id="formulaire3">
+    <legend id="legend3">Informations de réglement</legend>
+    <p>
+      1. Type de carte bancaire :<br />
+      <input type="radio" name="visa" id="visa" />
+      <label for="visa">Visa</label> <br />
+
+      <input type="radio" name="mastercard" id="mastercard" />
+      <label for="mastercard">Mastercard</label> <br />
+    </p>
+    <p>
+      <label for="numerodecarte">2. Numéro de carte :</label>
+      <input type="text" name="numerodecarte" id="numerodecarte" placeholder="Numéro de carte" size="20" />
+    </p>
+    <p>
+      <label for="codedesecurite">3. Code de sécurité :</label>
+      <input type="text" name="codedesecurite" id="codedesecurite" placeholder="Code de sécurité" size="20" />
+    </p>
+    <p>
+      <label for="nomdutitulaire">4. Nom du titulaire :</label>
+      <input type="text" name="nomdutitulaire" id="nomdutitulaire" placeholder="Nom du titulaire" size="20" />
+    </p>
+  </fieldset>
+
+  <input type="submit" value="J'achète!" />
+
+  </form>
 
 </body>
 
